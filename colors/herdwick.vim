@@ -147,7 +147,7 @@ call herdwick#highlight('Include', s:palette.purple, s:palette.none, 'italic')
 call herdwick#highlight('Define', s:palette.purple, s:palette.none, 'italic')
 call herdwick#highlight('Conditional', s:palette.red, s:palette.none, 'italic')
 call herdwick#highlight('Repeat', s:palette.red, s:palette.none, 'italic')
-call herdwick#highlight('Keyword', s:palette.red, s:palette.none, 'italic')
+call herdwick#highlight('Keyword', s:palette.fg, s:palette.none)
 call herdwick#highlight('Typedef', s:palette.red, s:palette.none, 'italic')
 call herdwick#highlight('Exception', s:palette.red, s:palette.none, 'italic')
 call herdwick#highlight('Statement', s:palette.red, s:palette.none, 'italic')
@@ -162,7 +162,7 @@ call herdwick#highlight('Special', s:palette.yellow, s:palette.none)
 call herdwick#highlight('SpecialChar', s:palette.yellow, s:palette.none)
 call herdwick#highlight('Type', s:palette.yellow, s:palette.none)
 call herdwick#highlight('Function', s:palette.green, s:palette.none)
-call herdwick#highlight('String', s:palette.green, s:palette.none)
+call herdwick#highlight('String', s:palette.grey2, s:palette.none, 'italic')
 call herdwick#highlight('Character', s:palette.green, s:palette.none)
 call herdwick#highlight('Constant', s:palette.aqua, s:palette.none)
 call herdwick#highlight('Macro', s:palette.aqua, s:palette.none)
@@ -287,7 +287,7 @@ highlight! link TSFuncBuiltin Fg
 highlight! link TSFuncMacro Fg
 highlight! link TSFunction Fg
 highlight! link TSInclude Fg
-highlight! link TSKeyword Fg
+highlight! link TSKeyword Keyword
 highlight! link TSKeywordFunction Fg
 highlight! link TSKeywordOperator Fg
 highlight! link TSLabel Fg
@@ -303,7 +303,7 @@ highlight! link TSPunctBracket Fg
 highlight! link TSPunctDelimiter Fg
 highlight! link TSPunctSpecial Fg
 highlight! link TSRepeat Fg
-highlight! link TSString Fg
+highlight! link TSString String
 highlight! link TSStringEscape Fg
 highlight! link TSStringRegex Fg
 highlight! link TSStructure Fg
