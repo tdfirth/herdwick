@@ -76,6 +76,13 @@ call herdwick#highlight('StatusLine', s:palette.grey1, s:palette.bg1)
 call herdwick#highlight('StatusLineTerm', s:palette.grey1, s:palette.bg1)
 call herdwick#highlight('StatusLineNC', s:palette.grey1, s:palette.bg0)
 call herdwick#highlight('StatusLineTermNC', s:palette.grey1, s:palette.bg0)
+call herdwick#highlight('StatusLineNormal', s:palette.grey2, s:palette.bg2)
+call herdwick#highlight('StatusLineInsert', s:palette.fg, s:palette.bg3)
+call herdwick#highlight('StatusLineVisual', s:palette.fg, s:palette.bg3)
+call herdwick#highlight('StatusLineReplace', s:palette.fg, s:palette.bg3)
+call herdwick#highlight('StatusLineCmdLine', s:palette.fg, s:palette.bg3)
+call herdwick#highlight('StatusLineTerminal', s:palette.fg, s:palette.bg3)
+call herdwick#highlight('StatusLineExtra', s:palette.grey2, s:palette.bg2)
 call herdwick#highlight('TabLine', s:palette.grey2, s:palette.bg3)
 call herdwick#highlight('TabLineFill', s:palette.grey1, s:palette.bg1)
 call herdwick#highlight('TabLineSel', s:palette.bg0, s:palette.green)
@@ -212,10 +219,10 @@ highlight! link VirtualTextWarning Grey
 highlight! link VirtualTextError Grey
 highlight! link VirtualTextInfo Grey
 highlight! link VirtualTextHint Grey
-call herdwick#highlight('ErrorFloat', s:palette.red, s:palette.bg2)
-call herdwick#highlight('WarningFloat', s:palette.yellow, s:palette.bg2)
-call herdwick#highlight('InfoFloat', s:palette.blue, s:palette.bg2)
-call herdwick#highlight('HintFloat', s:palette.green, s:palette.bg2)
+call herdwick#highlight('ErrorFloat', s:palette.fg, s:palette.bg2)
+call herdwick#highlight('WarningFloat', s:palette.fg, s:palette.bg2)
+call herdwick#highlight('InfoFloat', s:palette.fg, s:palette.bg2)
+call herdwick#highlight('HintFloat', s:palette.fg, s:palette.bg2)
 if &diff
   call herdwick#highlight('CurrentWord', s:palette.bg0, s:palette.green)
 else
